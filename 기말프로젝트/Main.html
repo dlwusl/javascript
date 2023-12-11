@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE ART ; 예술을 보다</title>
+
+    <style>
+        
+       header {
+        text-align: center;
+      }
+
+       nav ul {
+       position: absolute;
+       top: 20px;
+       right: 80px;
+       }
+       nav ul li {
+        display: inline;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 3px;
+       }
+       nav ul li a {
+        text-decoration: none;
+        color: black;
+       }
+       nav ul li a:hover {
+        text-decoration: underline;
+       }
+
+       div {
+        text-align: center;
+       }
+   
+       aside ul {
+        list-style: none;
+        text-align: center;
+        border-top: 2px solid skyblue;
+        border-bottom: 2px solid skyblue;
+        padding: 10px 0;
+        word-spacing: 200px;
+       }
+
+       aside ul li {
+        display: inline;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 5px;
+       }
+       aside ul li a {
+        text-decoration: none;
+        color: black;
+        
+       }
+       aside ul li a:hover {
+        text-decoration: underline;
+       }
+
+       h2 {
+        text-align: center;
+        background-color: skyblue;
+        color: white;
+        font-size: 20px;
+        width: 250;
+        padding: 10px;
+       }
+
+       section {
+        text-align: center;
+       }
+
+       section li {
+        margin: 10px;
+        padding: 20px;
+        display: inline-block;
+       }
+
+       section h3 {
+        text-align: left;
+        line-height: 5px;
+       }
+
+       section p {
+        text-align: left;
+        line-height: 25px;
+        color: gray;
+       }
+
+       footer {
+        text-align: center;
+        background-color: rgb(240, 240, 240);
+        color: #383838;
+        font-size: 20px;
+        width: 250;
+        padding: 10px;
+       }
+       
+
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+    <img src="image/로고.png" width="100" height="70"/>
+    </header>
+
+    <nav>
+        <ul>
+            <li>검색</li>
+            <li><a href="로그인.html" target="_blank">로그인</a></li>
+            <li><a href="회원가입.html">회원가입</a></li>
+        </ul>
+    </nav> 
+    
+    <aside id="center">
+    <ul>
+        <li><a href="Main.html">HOME</a></li>
+        <li><a href="전시회.html">EXHIBITION</a></li>
+        <li><a href="리뷰.html">REVIEW</a></li>
+        <li>MYPAGE</li>
+    </ul>
+    </aside>
+
+    <div>
+    <img src="1.jpg" width="1480" height="500" id="image">
+    <script>
+        let num = 0;
+    
+        function show (){
+        if(num==0){
+         document.getElementById("image").src = "광고 1.JPG";
+         num =1;
+        }else if(num==1){
+         document.getElementById("image").src = "광고 2.JPG";
+         num =2;
+        }else if(num==2){
+         document.getElementById("image").src = "광고 3.JPG";
+         num =3;
+        }else if(num==3){
+         document.getElementById("image").src = "광고 4.JPG";
+         num =4;
+        }else{
+         document.getElementById("image").src = "광고 5.JPG";
+         num =0;
+        }
+        setTimeout('show()', 2500);
+        }
+    
+        show();
+        </script>
+        </div>
+
+  
+  <h2>인기 급상승 전시회</h2>
+
+   <section>
+
+    <ul>
+        <li>
+        <div class="card">
+        <a target="iframe1" href="전시회 정보.html"><img src="image/1.JPG" width="210" height="297"></a>
+        <h3>Sumida Aquapium</h3>
+        <p>샤롯데씨어터<br>
+        2023.10.6 ~ 2023.12.30</p>
+        </div>
+        </li>
+        
+        <li>
+        <div class="card">
+        <img src="image/2.JPG" width="210" height="297">
+        <h3>Focus On The Good</h3>
+        <p>충무아트센터 대극장<br>
+        2023.12.10 ~ 2023.12.20</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/3.JPG" width="210" height="297">
+        <h3>I want you</h3>
+        <p>블루스퀘어 신한카드홀<br>
+        2023.11.8 ~ 2023.2.15</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/4.JPG" width="210" height="297">
+        <h3>Anti Gone</h3>
+        <p>잠실종합운동장 내 빅탑<br>
+        2023.12.6 ~ 2024.1.25</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/5.JPG" width="210" height="297">
+        <h3>The Design Expo</h3>
+        <p>서울 LG 아트센터<br>
+        2023.12.18 ~ 2024.2.27</p>
+        </div>
+        </li>
+
+</section>
+
+<h2>무료 전시회</h2>
+
+   <section>
+
+    <ul>
+        <li>
+        <div class="card">
+        <img src="image/6.JPG" width="210" height="297">
+        <h3>Samso nas ir Da lila</h3>
+        <p>대학로 티오엠 1관<br>
+        2023.12.2 ~ 2023.12.15</p>
+        </div>
+        </li>
+        
+        <li>
+        <div class="card">
+        <img src="image/7.JPG" width="210" height="297">
+        <h3>뮤지엄 페스티벌 마당</h3>
+        <p>국립현대미술관 서울관<br>
+        2023.11.30 ~ 2024.1.10</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/8.JPG" width="210" height="297">
+        <h3>Rejoice</h3>
+        <p>롯데아울렛 본관<br>
+        2023.12.18 ~ 2024.2.15</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/9.JPG" width="210" height="297">
+        <h3>Air Bubbles</h3>
+        <p>디큐브 링크아트센터<br>
+        2023.11.6 ~ 2024.2.25</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/10.JPG" width="210" height="297">
+        <h3>Chostakovitch Bernstein</h3>
+        <p>한전아트센터<br>
+        2023.12.3 ~ 2024.3.10</p>
+        </div>
+        </li>
+
+</section>
+
+<h2>12월 신규 전시회</h2>
+
+   <section>
+
+    <ul>
+        <li>
+        <div class="card">
+        <img src="image/11.JPG" width="210" height="297">
+        <h3>Waka Waka</h3>
+        <p>예술의전당 디자인실<br>
+        2023.12.10 ~ 2023.2.10</p>
+        </div>
+        </li>
+        
+        <li>
+        <div class="card">
+        <img src="image/12.JPG" width="210" height="297">
+        <h3>Society of Forms</h3>
+        <p>국립현대미술관 서울관<br>
+        2023.12.22 ~ 2023.1.28</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/13.JPG" width="210" height="297">
+        <h3>물의 꿈</h3>
+        <p>샤롯데씨어터<br>
+        2023.12.2 ~ 2023.1.15</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/14.JPG" width="210" height="297">
+        <h3>Ocean Plastics</h3>
+        <p>뉴스뮤지엄 연희<br>
+        2023.12.6 ~ 2024.1.25</p>
+        </div>
+        </li>
+
+        <li>
+        <div class="card">
+        <img src="image/15.JPG" width="210" height="297">
+        <h3>색감</h3>
+        <p>잠실종합운동장 내 빅탑<br>
+        2023.12.8 ~ 2024.1.27</p>
+        </div>
+        </li>
+
+</section>
+
+<footer><h5>
+    <p>SEE ART ; 예술을 보다</p>
+    <p>대표 : 이지현 | 전화번호 : 000-2022-4473</p>
+    <p>주소 : 경상남도 김해시 인제 빌딩 5층</p>
+    </h5>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+
+    <style>
+    header {
+        text-align: center;
+      }
+
+      aside ul {
+        list-style: none;
+        text-align: center;
+        border-top: 2px solid skyblue;
+        border-bottom: 2px solid skyblue;
+        padding: 10px 0;
+        word-spacing: 200px;
+       }
+
+       aside ul li {
+        display: inline;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 5px;
+       }
+       aside ul li a {
+        text-decoration: none;
+        color: black;
+        
+       }
+       aside ul li a:hover {
+        text-decoration: underline;
+       }
+
+
+    div {
+        text-align: center;
+        background-color: white;
+        margin: 150px auto;
+        padding: 90px;
+        width: 400px;
+        border: 2px solid lightgray;
+        border-radius: 25px;   
+    }
+
+    div image {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input {
+        display: block;
+        width: 355px;
+        height: 45px;
+        border-radius: 25px;
+        border: 2px solid lightgrey;
+        padding: 2px 15px;
+        font-size: 15px;
+    }
+
+    textarea {
+        display: block;
+        width: 355px;
+        height: 200px;
+        border-radius: 25px;
+        border: 2px solid lightgrey;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    button {
+        
+        background-color: skyblue;
+        margin: 18px auto;
+        padding: 17px;
+        width: 388px;
+        border: 1px solid skyblue;
+        border-radius: 25px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="image/로고.png" width="100" height="70"/>
+        </header>
+
+        <aside id="center">
+        <ul>
+            <li><a href="Main.html">HOME</a></li>
+            <li><a href="전시회.html">EXHIBITION</a></li>
+            <li><a href="리뷰.html">REVIEW</a></li>
+        <li>MYPAGE</li>
+        </ul>
+        </aside>
+
+    <form action="Main.html" method="post">
+
+    <div class= "center-table">
+        <h1>전시회 관람 후기</h1>
+        <p>전시회 관람 후기를 입력해주세요</p><br>
+        <input type="text" name="text" placeholder="성함을 입력해주세요"><br>
+        <input type="text" name="text" placeholder="전시회 이름을 작성해주세요"><br>
+        <textarea name="feedback" placeholder="후기를 작성해주세요" rows="3" cols="30"></textarea><br>
+        <button><a href="Main.html" onclick="alert('관람후기가 등록 되었습니다 !')">작성</a></button>
+        </from>
+    </div>
+    
+
+</body>
+</html>
